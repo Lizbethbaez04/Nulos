@@ -12,9 +12,17 @@ namespace Nulos
         {
             Carro miCarro = new Carro();
             miCarro.Marca = "Tsuru";
-            miCarro.kilometraje = "1000";
+            miCarro.kilometraje = "10000000";
             Console.WriteLine("Marca: " + miCarro.Marca);
             Console.WriteLine("Kilometraje: " + miCarro.kilometraje);
+
+            miCarro.DueñoCarro = new Dueño();
+            miCarro.DueñoCarro.Nombre = "Pedro";
+            //NULL se usa para inicializar valor
+            //NULL tambien se puede usar para asignar valores
+            miCarro.DueñoCarro = null;
+
+
             if(miCarro.DueñoCarro!=null)
             {
                 Console.WriteLine("Dueño: " + miCarro.DueñoCarro.Nombre);
